@@ -8,5 +8,4 @@ var nome ='guilherme';
 var sobrenome='marques';
 var nomeCompleto= nome + " " +sobrenome;
 console.log(nomeCompleto);
-
 //teste
