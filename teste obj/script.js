@@ -1,7 +1,7 @@
 var obj={
     nome: 'guilherme',
     idade: 18,
-    profissao: 'estagiario'
+    profissao: 'estagiario',
 };
 console.log(obj)
 //
