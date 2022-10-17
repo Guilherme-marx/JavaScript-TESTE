@@ -10,9 +10,9 @@ Mas você pode:
 
 Altere os elementos da matriz constante
 Alterar as propriedades do objeto constante*/
-/*
-const cars =["saab",'volvo','bmw'];
+
+const cars2 =["saab",'volvo','bmw'];
 //pode mudar um elemento
-cars[0]='toyota';
-//ou adicionar
-cars.push('audi');*/
+console.log(cars2[0]);
+cars2[0] = "Bruno";
+console.log(cars2)
