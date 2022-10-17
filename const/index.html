@@ -12,18 +12,7 @@
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="row-justify-content-center">
-            <div class="col-10 col-md-10 col-lg-8 col-xl-7">
-                <h1 class="display4 text-primary mt3 mb2" style="font-family: 'Roboto Mono', monospace;">logo</h1>
-                <a href="./port.html">abc+</a>
-                <router-link class="btn btn-outline-primary mr-2" to="/register">Register</router-link>
-                <router-link class="btn btn-outline-primary mr-2" to="/login">Log In</router-link>
-                <router-link class="btn btn-outline-primary mr-2" to="/home">home</router-link>
-            </div>
-        </div>
-    </div>
-    <br>
+
     <h2>JavaScript Objects</h2>
 <p>Creating a JavaScript object:</p>
 
@@ -41,6 +30,21 @@ document.getElementById("demo").innerHTML =
 person.firstName + " is " + person.age + " years old.";
 </script>
 
+<p id="demo"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
+</script>
 
     <script src="./script.js"></script>
 </body>
