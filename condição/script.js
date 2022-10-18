@@ -10,3 +10,8 @@ if(idade>=idadeMinima){
 if(idade<idadeMinima){
     console.log("ainda não pode tirar a carteira")
 }
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "asaaa";
+fruits.push("sokdso");
+console.log(fruits)
