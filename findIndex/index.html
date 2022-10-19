@@ -26,12 +26,12 @@
     <!--array.keys()-->
 
     <script>
-        const fruit = ['banana', 'maçã', 'pera', 'uva'];
-        const keys = fruit.keys();
+        const vegetables = ['banana', 'maçã', 'pera', 'uva'];
+        const keys = vegetables.keys();
 
         let text = '';
         for (let x of keys) {
-            text += x + br;
+            text += x + '<br />';
         }
         document.getElementById("demo").innerHTML = text;
     </script>
@@ -44,11 +44,11 @@
     </script>
     <!--entries()-->
     <script>
-        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
-        const f = fruitsentries();
+        const otherFruits = ["Banana", "Orange", "Apple", "Mango"];
+        // const fruit = fruitsEntries();
 
-        for (let x of f) {
-            document.getElementById('demo').innerHTML += x + "br";
+        for (let fruit of otherFruits) {
+            document.getElementById('demo').innerHTML += fruit + "<br />";
         }
     </script>
     -->
