@@ -12,7 +12,7 @@
     <div id="carrinho">
     </div>
     <script>
-        const itens = [
+        const items = [
             {
                 id: 0,
                 nome: 'camiseta',
@@ -34,10 +34,28 @@
         ]
         incializarLoja = () => {
             var containerProdutos = document.getElementById('produtos');
-            itens.map((val) => {
-                console.log(val.nome);
+            items.map((val) => {
+                //console.log(val.nome);//
+                containerProduct.innerHTML += `
+                
+                <div class="produto-single">
+                    <img src="`+ val.img`"/>
+                    <p>`+ val.nome + `</p>
+                    <a key="`+ val.id + `"href="">adicionar ao carrinho<a/>
+                    </div>
+                `;
             })
         }
+        incializarLoja();
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 
