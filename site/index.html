@@ -27,7 +27,7 @@
             },
             {
                 id: 2,
-                nome: 'miea',
+                nome: 'meia',
                 img: 'image.jpg',
                 quantidade: 0
             },
@@ -36,10 +36,10 @@
             var containerProdutos = document.getElementById('produtos');
             items.map((val) => {
                 //console.log(val.nome);//
-                containerProduct.innerHTML += `
+                containerProdutos.innerHTML += `
                 
                 <div class="produto-single">
-                    <img src="`+ val.img`"/>
+                    <img src="`+ val.img + `"/>
                     <p>`+ val.nome + `</p>
                     <a key="`+ val.id + `"href="">adicionar ao carrinho<a/>
                     </div>
