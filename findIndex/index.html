@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>findIndex</title>
+</head>
+
+<body>
+    <!--findIndex()-->
+    <p id="demo"></p>
+    <!---->
+    <script>
+        const numbers = [4, 9, 16, 25, 29];
+
+        document.getElementById("demo").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+
+        function myFunction(value) {
+            return value > 18;
+        } 
+    </script>
+
+    <!--array.keys()-->
+
+    <script>
+        const fruit = ['banana', 'maçã', 'pera', 'uva'];
+        const keys = fruit.keys();
+
+        let text = '';
+        for (let x of keys) {
+            text += x + br;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <!--includes()-->
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.includes("Mango");
+    </script>
+    <!--entries()-->
+    <script>
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        const f = fruitsentries();
+
+        for (let x of f) {
+            document.getElementById('demo').innerHTML += x + "br";
+        }
+    </script>
+    -->
+    <script>
+        const d1 = new Date(2018, 11, 24, 10, 33, 30, 0);
+        document.getElementById("demo").innerHTML = d1;
+    </script>
+    <script src="script.js"></script>
+
+    <!--toDateString()-->
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toDateString();
+    </script>
+</body>

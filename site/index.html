@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="produtos">
+    </div>
+    <div id="carrinho">
+    </div>
+    <script>
+        const itens = [
+            {
+                id: 0,
+                nome: 'camiseta',
+                img: 'image.jpg',
+                quantidade: 0
+            },
+            {
+                id: 1,
+                nome: 'sapato',
+                img: 'image.jpg',
+                quantidade: 0
+            },
+            {
+                id: 2,
+                nome: 'miea',
+                img: 'image.jpg',
+                quantidade: 0
+            },
+        ]
+        incializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            itens.map((val) => {
+                console.log(val.nome);
+            })
+        }
+    </script>
+</body>
+
+</html>
